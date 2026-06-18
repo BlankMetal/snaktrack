@@ -1,0 +1,118 @@
+---------- Forwarded message ----------
+From: Dan Fletcher <d.fletcher@bigcorp.internal>
+To: SnakTrack Dev <snaktrack-dev@bigcorp.internal>
+Date: Thu, 15 Feb 2024 11:22:17 -0600
+Subject: FW: [BIGCORP ALL] Care Team Approved Language — Digital Surface Deployment
+
+FYI per Jeremy's suggestion — adding to repo so we have it if we need it
+
+-Dan
+
+---------- Forwarded message ----------
+From: Care Team <care-team@bigcorp.internal>
+To: All Employees <all@bigcorp.internal>
+Date: Wed, 14 Feb 2024 09:04:33 -0600
+Subject: [BIGCORP ALL] Care Team Approved Language — Digital Surface Deployment
+
+Hello BigCorp Family,
+
+The Care Team is pleased to share our updated library of approved language
+for use across employee-facing digital surfaces. These phrases have completed
+the full Care Team review cycle and are cleared for immediate deployment.
+
+You may select any phrase from the approved list below and append it to
+operational messages on dashboards, portals, intake forms, confirmation
+screens, and automated system responses.
+
+A few reminders before you scroll:
+
+  - Phrases are interchangeable within their designated tier.
+  - Do not combine more than one approved phrase per message.
+  - Care language should follow, not precede, the operational content.
+  - Do not modify approved phrases. Modifications require a revision request
+    submitted to the Care Team intake queue.
+  - Approved Care Team language does not constitute a commitment to resolve
+    the underlying issue.
+
+We are so excited to share this with you. You matter here.
+
+---
+
+TIER 1 — GENERAL WARMTH
+
+Approved for all employee-facing surfaces.
+
+  We love you.
+  We love to listen.
+  You matter here.
+  People matter here.
+  Because we care.
+  BigCorp hears you.
+  Your voice shapes us.
+  We see you, fully.
+  You are not alone in this.
+  This moment is valid.
+  Our commitment to you is ongoing.
+  Care is not a department. It is a posture.
+
+---
+
+TIER 2 — ACKNOWLEDGMENT
+
+Approved for status updates and notice surfaces.
+
+  We hold space for your experience.
+  Your trust powers our culture.
+  Growth starts with listening.
+  Empathy is how we build.
+  Belonging is a human right, and we agree.
+  We recognize the complexity of your situation.
+  Every voice matters in our care-first environment.
+  Your wellbeing is central to our mission.
+  BigCorp is committed to your holistic experience.
+  Connection is how we grow together.
+  We are proud to be part of your journey.
+
+---
+
+TIER 3 — PROCESS FRICTION
+
+Approved for rejection, error, and variance surfaces. Use when the system
+has been unable to fulfill a request. Append directly after the operational
+message without additional explanation.
+
+Example of correct use:
+
+  "Snack request rejected. Snack exposure remains unowned. We love you."
+
+  "BUDGET VARIANCE REQUIRED. Your access to care is unlimited."
+
+Example of incorrect use:
+
+  "We love you. Snack request rejected." [phrase must follow, not lead]
+
+  "We love you and we hold space for your experience." [one phrase only]
+
+Approved phrases for Tier 3 surfaces:
+
+  Your access to care is unlimited.
+  You deserve to feel heard, even now.
+  Thank you for your continued engagement with BigCorp's care ecosystem.
+  Your feedback is always welcome, even when it cannot be actioned at this time.
+  Your snack request is important to our workplace nourishment journey.
+  We are holding your concern with intention.
+  This outcome does not reflect the full care you deserve.
+  BigCorp sees the human behind every request.
+  Your resilience is an inspiration to the team.
+  Please know that this decision was made thoughtfully.
+
+---
+
+Questions? Contact the Care Team intake queue. Response time is typically
+6 to 8 weeks. The Care Team does not have a phone number at this time.
+
+If your concern is urgent, please consider whether it is actually urgent.
+
+Warmly,
+The Care Team
+BigCorp Employee Experience Division

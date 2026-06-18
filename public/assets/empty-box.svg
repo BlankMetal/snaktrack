@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-labelledby="title">
+  <title id="title">Empty snack box</title>
+  <rect width="240" height="160" fill="#f8f3e7"/>
+  <path d="M54 72h132l-18 52H72L54 72Z" fill="#d9c7a7" stroke="#6c6252" stroke-width="4"/>
+  <path d="M54 72l28-34h76l28 34" fill="#efe2c8" stroke="#6c6252" stroke-width="4"/>
+  <path d="M82 38l18 34M158 38l-18 34" stroke="#6c6252" stroke-width="4"/>
+</svg>
+

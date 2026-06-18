@@ -1,0 +1,18 @@
+{
+  "effectiveQuarter": "2026-Q2",
+  "notes": "Historical department overrides copied from the old spreadsheet. Current local approval uses employee tenure budgets.",
+  "overrides": [
+    {
+      "department": "Facilities",
+      "limit": 180
+    },
+    {
+      "department": "Sales",
+      "limit": 240
+    },
+    {
+      "department": "Finance",
+      "limit": 75
+    }
+  ]
+}

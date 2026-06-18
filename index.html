@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snack approval console</title>
+    <link rel="stylesheet" href="/styles/generated-theme.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Snack approval console home" data-shell-home>
+          <span class="brand-mark" aria-hidden="true">
+            <img
+              src="/assets/bigcorp-best-i-could-find.jpg"
+              alt=""
+              data-brand-logo
+            />
+          </span>
+          <span>
+            <strong data-product-line>Snack approval console</strong>
+            <small data-company-line>Internal liability console</small>
+          </span>
+        </a>
+        <nav class="utility-nav" aria-label="Utility navigation">
+          <a href="#requests" data-nav-requests>Requests</a>
+        </nav>
+      </header>
+
+      <main id="snack-dashboard" class="dashboard-root" aria-live="polite">
+        <p class="loading" data-loading-message>Loading regulated snack requests...</p>
+      </main>
+
+      <footer class="footer-note" data-shell-footer>Snack data syncs from the demo file.</footer>
+    </div>
+
+    <script type="module" src="/app/app.module.js"></script>
+  </body>
+</html>

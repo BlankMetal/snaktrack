@@ -1,0 +1,7 @@
+{
+  "year": 2024,
+  "finding": "Finance review behavior should be consistently named across tools.",
+  "severity": "medium",
+  "note": "Filename approved by committee.",
+  "copy_note": "Care language may follow the queue status, but it should not replace the queue status."
+}

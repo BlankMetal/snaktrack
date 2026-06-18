@@ -1,0 +1,11 @@
+{
+  "source": "legacy export",
+  "items": [
+    {
+      "id": "OLD-44",
+      "snack": "Granola tub",
+      "note": "Button appeared to do nothing in the old jQuery table."
+    }
+  ]
+}
+

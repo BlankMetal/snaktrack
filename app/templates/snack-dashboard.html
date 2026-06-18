@@ -1,0 +1,47 @@
+<section class="dashboard-panel" id="requests" aria-labelledby="dashboard-title">
+  <div class="compliance-strip" aria-label="Corporate ownership notices">
+    <ul data-compliance-items></ul>
+  </div>
+
+  <div class="dashboard-heading">
+    <div>
+      <p class="eyebrow" data-dashboard-eyebrow></p>
+      <h1 id="dashboard-title" data-dashboard-title tabindex="-1"></h1>
+    </div>
+    <p class="dashboard-context" data-dashboard-context></p>
+  </div>
+
+  <div data-notice class="notice notice-info"></div>
+
+  <div data-acting-user class="acting-user-panel" aria-label="Acting user selector"></div>
+
+  <div data-requester-form class="requester-panel"></div>
+
+  <div data-admin-workflow>
+    <div data-summary class="summary-grid" aria-label="Request status summary"></div>
+
+    <div data-pagination class="pagination-bar" aria-label="Request page controls"></div>
+
+    <div class="table-shell">
+      <table class="request-table">
+        <caption data-table-caption></caption>
+        <thead>
+          <tr>
+            <th scope="col" data-table-header="request"></th>
+            <th scope="col" data-table-header="requester"></th>
+            <th scope="col" data-table-header="snack"></th>
+            <th scope="col" data-table-header="itemCost"></th>
+            <th scope="col" data-table-header="status"></th>
+            <th scope="col" data-table-header="requested"></th>
+            <th scope="col" data-table-header="action"></th>
+          </tr>
+        </thead>
+        <tbody data-request-list></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div data-requester-history class="requester-history-panel"></div>
+
+  <div data-review-modal class="review-modal" hidden></div>
+</section>

@@ -1,0 +1,25 @@
+/*
+  Old SnakTrack 2019 styles. Kept because two intranet pages still linked to
+  this file in a screenshot from Dan.
+*/
+
+.snackRow {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.snackRowApproved {
+  color: green;
+}
+
+.snackRowFinanceJail {
+  color: purple;
+}
+
+.approveSnackButton {
+  background: linear-gradient(#68a, #236);
+  border-radius: 12px;
+  color: white;
+}
+
