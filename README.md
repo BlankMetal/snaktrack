@@ -68,7 +68,6 @@ Known modern components:
 
 - `components/ApprovalCard.jsx`
 - `components/SnackBadge.jsx`
-- `components/EmptyState.jsx`
 
 Use these when possible, unless the production dashboard is not using React.
 
@@ -121,7 +120,6 @@ There is also a `dist/` folder. It is usually generated output, but it has been 
 - Almonds.
 - Some historical notes mention bulk snack review. They are incident context, not the active approval rule.
 - The Microsoft Access snack database is required for production, except the current dashboard appears to use a local JSON file.
-- The test suite is comprehensive, except for the parts that are not covered by the one script.
 - If approvals silently fail, refresh twice and ask whether the snack exceeds the requester budget.
 
 ## Troubleshooting

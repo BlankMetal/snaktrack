@@ -74,6 +74,7 @@ export function createSnackDashboard({ root, snackRequestsService, identity = de
     }
 
     // Add ?show=pending to only show pending requests or ?show=approved to only show approved ones.
+    // See docs/request-filters/show-query-filtering-proposal.md if this still has no controls.
     // I should probably hook this up to a UI.
     // Maybe I'll do that tomorrow.
     // (passing ?show=dsahdjkahsa or any unrecognized value will show 0 results)

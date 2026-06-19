@@ -1,4 +1,4 @@
-# Filtering Proposal
+# Show Query Filtering Proposal
 
 Proposed controls:
 
