@@ -614,6 +614,105 @@ h1 {
   gap: var(--space-xs);
 }
 
+.filter-box {
+  border: 2px solid var(--line-strong);
+  margin-top: var(--space-sm);
+  overflow-x: auto;
+}
+
+.filter-box:empty {
+  display: none;
+}
+
+.filter-box-title {
+  background: var(--company);
+  border-bottom: 2px solid var(--line-strong);
+  color: var(--paper-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin: 0;
+  padding: var(--space-xs) var(--space-sm);
+  text-transform: uppercase;
+}
+
+.simple-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  justify-content: flex-end;
+  padding: var(--space-xs);
+}
+
+.status-buttons {
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-columns: repeat(5, minmax(132px, 1fr));
+  min-width: 760px;
+  padding: var(--space-xs);
+}
+
+.filter-box .pagination-button.is-active {
+  background:
+    linear-gradient(180deg, oklch(0.84 0.16 88), var(--warning));
+  border-color: var(--company);
+  color: var(--ink);
+}
+
+.filter-count {
+  background: var(--paper-strong);
+  border: 1px solid currentColor;
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.9rem;
+  line-height: 1;
+  min-width: 28px;
+  padding: 4px 5px;
+  text-align: center;
+}
+
+.status-button {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--space-xs);
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search-holder {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  padding: 0 var(--space-xs) var(--space-xs);
+}
+
+.search-holder label {
+  display: block;
+  flex: 1 1 240px;
+}
+
+.search-holder span {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2xs);
+  text-transform: uppercase;
+}
+
+.search-holder input {
+  background: var(--paper-strong);
+  border: 2px solid var(--line);
+  color: var(--ink);
+  min-height: 34px;
+  padding: 5px 8px;
+  width: 100%;
+}
+
+.search-holder input:focus-visible {
+  outline: 2px solid var(--company);
+  outline-offset: 1px;
+}
+
 .pagination-button {
   background:
     linear-gradient(180deg, oklch(0.74 0.045 250), var(--company-plate));
@@ -869,6 +968,13 @@ h1 {
   text-transform: uppercase;
 }
 
+.override-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  justify-content: flex-end;
+}
+
 .review-modal[hidden] {
   display: none;
 }
@@ -999,23 +1105,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-xs);
-  justify-content: end;
+  justify-content: flex-end;
   padding-top: var(--space-sm);
-}
-
-.empty-row td {
-  background: var(--warning);
-  color: var(--ink);
-  padding: var(--space-md);
-}
-
-.empty-row strong,
-.empty-row span {
-  display: block;
-}
-
-.empty-row span {
-  margin-top: var(--space-2xs);
 }
 
 .footer-note {

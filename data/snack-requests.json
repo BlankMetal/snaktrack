@@ -10,34 +10,34 @@
     "notes": "Client team is visiting and specifically asked for the fancy pretzels."
   },
   {
-    "id": "REQ-1051",
-    "requester": "Cass Morgan",
-    "department": "People Ops",
-    "snack": "Celebration macadamia box",
-    "itemCost": 18.5,
-    "status": "pending",
-    "requestedAt": "2026-05-16",
-    "notes": "Tiny morale moment for the new-hire paperwork completion table."
-  },
-  {
-    "id": "REQ-1042",
-    "requester": "Margot Lane",
-    "department": "Facilities",
-    "snack": "Pretzel rods",
-    "itemCost": 8,
-    "status": "pending",
-    "requestedAt": "2026-05-15",
-    "notes": "For the post-retrospective snack bowl."
-  },
-  {
     "id": "REQ-2188",
     "requester": "Sonia Patel",
     "department": "Office Operations",
     "snack": "Emergency cheese crackers",
     "itemCost": 14.5,
     "status": "pending",
-    "requestedAt": "2026-05-14",
+    "requestedAt": "2026-05-16",
     "notes": "The fourth-floor vending machine made a bad sound and is no longer trusted."
+  },
+  {
+    "id": "REQ-1042",
+    "requester": "Margot Lane",
+    "department": "Facilities",
+    "snack": "Catered pretzel tin",
+    "itemCost": 24,
+    "status": "pending",
+    "requestedAt": "2026-05-15",
+    "notes": "For the post-retrospective snack bowl, but with a lid Procurement can recognize."
+  },
+  {
+    "id": "REQ-1051",
+    "requester": "Cass Morgan",
+    "department": "People Ops",
+    "snack": "Celebration macadamia box",
+    "itemCost": 18.5,
+    "status": "pending",
+    "requestedAt": "2026-05-14",
+    "notes": "Tiny morale moment for the new-hire paperwork completion table."
   },
   {
     "id": "REQ-2187",
@@ -82,8 +82,8 @@
     "requester": "Priya Shah",
     "department": "Finance",
     "snack": "Licorice for budget review",
-    "itemCost": 27.25,
-    "status": "needs-override",
+    "itemCost": 33.75,
+    "status": "pending",
     "requestedAt": "2026-05-13",
     "notes": "Budget review ran long and Finance morale is legally fragile."
   },
@@ -158,8 +158,7 @@
     "snack": "Emergency bananas",
     "itemCost": 6.58,
     "status": "approved",
-    "requestedAt": "2026-05-11",
-    "notes": "Full flavored. No substitutions."
+    "requestedAt": "2026-05-11"
   },
   {
     "id": "REQ-4990",
@@ -294,8 +293,7 @@
     "snack": "Emergency bananas",
     "itemCost": 12.13,
     "status": "approved",
-    "requestedAt": "2026-05-06",
-    "notes": "Pickup note says menthol. Escalated quietly per ops note."
+    "requestedAt": "2026-05-06"
   },
   {
     "id": "REQ-4975",

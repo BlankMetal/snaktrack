@@ -10,7 +10,12 @@
     <input type="checkbox" data-override-confirmation />
     Approve this over-budget snack request.
   </label>
-  <button class="approve-button" type="button" data-override-action>
-    Record Budget Override
-  </button>
+  <div class="override-actions">
+    <button class="reject-button" type="button" data-modal-action="reject">
+      Reject Request
+    </button>
+    <button class="approve-button" type="button" data-override-action>
+      Approve (with override)
+    </button>
+  </div>
 </section>
