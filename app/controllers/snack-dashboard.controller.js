@@ -1,4 +1,5 @@
 import dashboardTemplate from "../templates/snack-dashboard.html?raw";
+import overBudgetOverrideTemplate from "../templates/over-budget-override.html?raw";
 import { identityCopy as defaultIdentity } from "../config/identity.config.js";
 import {
   approveSnackRequest,
@@ -11,7 +12,6 @@ import {
 
 const PAGE_SIZE = 50;
 const REQUESTER_PRICE_CAP = 30;
-const URL_STATUS_FILTERS = new Set(["pending", "approved", "rejected"]);
 const ACTING_USERS = Object.freeze({
   administrator: "ADMINISTRATOR",
   sampleEmployee: "SAMPLE EMPLOYEE",
@@ -59,25 +59,22 @@ export function createSnackDashboard({ root, snackRequestsService, identity = de
       return requests;
     }
 
-    if (!URL_STATUS_FILTERS.has(statusFilter)) {
-      return [];
-    }
-
-    return requests.filter((request) => request.status === statusFilter);
+    return requests.filter((request) => normalizeStatusFilterValue(request.status) === statusFilter);
   }
 
   function getStatusFilterFromUrl() {
     const query = new URLSearchParams(window.location.search);
 
-    if (!query.has("show")) {
+    if (!query.has("status")) {
       return null;
     }
 
-    // Add ?show=pending to only show pending requests or ?show=approved to only show approved ones.
-    // I should probably hook this up to a UI.
-    // Maybe I'll do that tomorrow.
-    // (passing ?show=dsahdjkahsa or any unrecognized value will show 0 results)
-    return query.get("show");
+    // Hidden local filter hook. There is still no UI for this; try ?status=pending.
+    return normalizeStatusFilterValue(query.get("status"));
+  }
+
+  function normalizeStatusFilterValue(value) {
+    return String(value || "").trim().toLowerCase();
   }
 
   function renderDashboard() {
@@ -468,7 +465,9 @@ export function createSnackDashboard({ root, snackRequestsService, identity = de
               )}
             </dl>
           </div>
-          <div class="review-policy-slot" data-budget-warning-slot hidden></div>
+          <div class="review-policy-slot" data-budget-warning-slot data-budget-override-slot hidden>
+            ${overBudgetOverrideTemplate}
+          </div>
         </div>
         <div class="review-modal-actions">
           <button class="reject-button" type="button" data-modal-action="reject">${identity.rowCopy.rejectAction}</button>

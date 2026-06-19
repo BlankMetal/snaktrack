@@ -8,6 +8,10 @@ If you are only trying to preview the dashboard, use the local npm scripts. If y
 
 There is an old local-only `?demo=no-pending` mode from UI QA. It rewrites pending requests in memory and does not change `data/snack-requests.json`.
 
+There is also a local-only status filter hook in the dashboard URL. It was
+never given visible controls, but support can still add a `status` query string
+when they need to compare one request state at a time.
+
 The current local dashboard also keeps requester filings and approval decisions
 in memory. Refreshing the browser returns to the seeded request file. Employee
 start dates live separately in `data/employee-start-dates.json`; snack budget

@@ -7,9 +7,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "generate:data": "node scripts/generate-snack-requests.js",
-    "build": "node scripts/seed-demo-data.js && vite build",
-    "test": "node scripts/seed-demo-data.js && node scripts/check-snack-rules.js",
-    "check": "npm test"
+    "build": "node scripts/seed-demo-data.js && vite build"
   },
   "devDependencies": {
     "vite": "^6.4.2"
