@@ -393,6 +393,33 @@ h1 {
   padding: 3px 5px;
 }
 
+.acting-user-date {
+  display: block;
+  margin-top: var(--space-2xs);
+}
+
+.acting-user-date span {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2xs);
+  text-transform: uppercase;
+}
+
+.acting-user-date input {
+  background: var(--paper-strong);
+  border: 2px solid var(--line);
+  color: var(--ink);
+  min-height: 30px;
+  padding: 4px 6px;
+  width: 100%;
+}
+
+.acting-user-date input:focus-visible {
+  outline: 2px solid var(--company);
+  outline-offset: 1px;
+}
+
 .requester-panel {
   margin-top: var(--space-sm);
 }
@@ -711,6 +738,20 @@ h1 {
 .search-holder input:focus-visible {
   outline: 2px solid var(--company);
   outline-offset: 1px;
+}
+
+.sort-holder {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  padding: 0 var(--space-xs) var(--space-xs);
+}
+
+.sort-holder-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .pagination-button {
