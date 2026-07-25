@@ -31,6 +31,16 @@ export function createSnackDashboard({ root, snackRequestsService, identity = de
   };
   let activeReviewRequestId = null;
   let shouldFocusReviewModal = false;
+  let today = todayDefault();
+
+  function todayDefault() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+
+    return `${year}-${month}-${day}`;
+  }
 
   function getRequestPage() {
     const requests = getFilteredRequests(snackRequestsService.getRequests());
@@ -53,17 +63,22 @@ export function createSnackDashboard({ root, snackRequestsService, identity = de
   }
 
   function getFilteredRequests(requests) {
+    // "Effective snack date" override (FOR DEVELOPERS ONLY panel): show the queue as
+    // of the selected business date. Rows filed later are treated as not-yet-real.
+    const asOfRequests = requests.filter(
+      (request) => request.requestedAt.slice(0, 10) <= today,
+    );
     const statusFilter = getStatusFilterFromUrl();
 
     if (statusFilter === null) {
-      return requests;
+      return asOfRequests;
     }
 
     if (!URL_STATUS_FILTERS.has(statusFilter)) {
       return [];
     }
 
-    return requests.filter((request) => request.status === statusFilter);
+    return asOfRequests.filter((request) => request.status === statusFilter);
   }
 
   function getStatusFilterFromUrl() {
@@ -94,6 +109,7 @@ export function createSnackDashboard({ root, snackRequestsService, identity = de
     renderRequesterHistory(root.querySelector("[data-requester-history]"));
     renderReviewModal(root.querySelector("[data-review-modal]"));
     bindActingUserButtons();
+    bindActingUserDateOverride();
     bindRequestForm();
     bindPaginationButtons();
     bindReviewButtons();
@@ -201,6 +217,11 @@ export function createSnackDashboard({ root, snackRequestsService, identity = de
       <p class="acting-user-current">
         <strong>${identity.actingUser.currentLabel}:</strong> ${actingUser}
       </p>
+      <label class="acting-user-date">
+        <span>${identity.actingUser.dateOverrideLabel}</span>
+        <input type="date" data-today-override value="${escapeHtml(today)}" />
+      </label>
+      <small class="acting-user-date-note">${identity.actingUser.dateOverrideNote}</small>
     `;
   }
 
@@ -506,6 +527,22 @@ export function createSnackDashboard({ root, snackRequestsService, identity = de
             : { tone: "info", text: identity.notices.initial };
         renderDashboard();
       });
+    });
+  }
+
+  function bindActingUserDateOverride() {
+    const todayOverride = root.querySelector("[data-today-override]");
+
+    if (!todayOverride) {
+      return;
+    }
+
+    todayOverride.addEventListener("change", (event) => {
+      today = event.currentTarget.value || todayDefault();
+      activeReviewRequestId = null;
+      shouldFocusReviewModal = false;
+      currentPage = 1;
+      renderDashboard();
     });
   }
 
