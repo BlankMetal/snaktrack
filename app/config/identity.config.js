@@ -66,6 +66,11 @@ export const identityCopy = Object.freeze({
     currentLabel: "Current acting user",
     administrator: "ADMINISTRATOR",
     sampleEmployee: "SAMPLE EMPLOYEE",
+    dateOverrideLabel: "Effective snack date",
+    dateOverrideNote:
+      "Per Memo 14-B §4, snack approvals may be re-evaluated against any business date. " +
+      "Rows filed after the selected date are treated as not-yet-real. " +
+      "Temporal side effects are unsupported and, per Legal, unlikely.",
   }),
   requesterIntake: Object.freeze({
     title: "File Your Snack Request",
